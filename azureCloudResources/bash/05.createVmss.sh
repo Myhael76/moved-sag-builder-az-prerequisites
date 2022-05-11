@@ -2,7 +2,6 @@
 
 . ./setEnv.sh
 
-# Seems not necessary, but may be used to rebuild the subnet
 echo "Creating the VMSS $SAG_AZ_VMSS_NAME"
 
 az vmss create \

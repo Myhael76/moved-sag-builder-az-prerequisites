@@ -1,6 +1,5 @@
 . ./setEnv.sh
 
-# Seems not necessary, but may be used to rebuild the subnet
 echo "Creating the storage account $SAG_AZ_SA_NAME..."
 
 az storage account create \

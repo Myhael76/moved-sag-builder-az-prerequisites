@@ -20,3 +20,6 @@ export SAG_AZ_VMSS_IMAGE="Canonical:0001-com-ubuntu-confidential-vm-focal:20_04-
 # storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
 export SAG_AZ_SA_NAME=azdevopsagentssa
 export SAG_AZ_SA_SHARE_NAME=azdevopsagentssashare
+
+# ACR name must contain only small caps
+export SAG_AZ_ACR_NAME=azdevopsacr

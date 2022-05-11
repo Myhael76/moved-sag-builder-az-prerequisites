@@ -10,6 +10,9 @@ az network vnet subnet create --name $SAG_AZ_VM_SUBNET_NAME \
 --resource-group $SAG_AZ_RG_NAME \
 --vnet-name $SAG_AZ_VNET_NAME \
 --address-prefixes $SAG_AZ_DEFAULT_CIDR \
---network-security-group $SAG_AZ_NSG_NAME
+--network-security-group $SAG_AZ_NSG_NAME \
+--disable-private-endpoint-network-policies
+
+# --disable-private-endpoint-network-policies necessary for subnet access
 
 echo "Created the subnet $SAG_AZ_VM_SUBNET_NAME, result $?"
